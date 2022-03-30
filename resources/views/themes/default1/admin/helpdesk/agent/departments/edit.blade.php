@@ -88,7 +88,7 @@ class="nav-link active"
             <!-- sla -->
             <div class="col-sm-6 form-group {{ $errors->has('sla') ? 'has-error' : '' }}">
                 {!! Form::label('sla',Lang::get('lang.SLA_plan')) !!}
-                {!!Form::select('sla', [''=>Lang::get('lang.select_a_sla'), Lang::get('lang.sla_plans')=>$slas->pluck('grace_period','id')->toArray()],null,['class' => 'form-control select']) !!}
+                {!!Form::select('sla', [''=>Lang::get('lang.select_a_sla'), Lang::get('lang.sla_plans')=>$slas->pluck('name','id')->toArray()],null,['class' => 'form-control select']) !!}
             </div>
             <!-- manager -->
             <div class="col-sm-6 form-group {{ $errors->has('manager') ? 'has-error' : '' }}">

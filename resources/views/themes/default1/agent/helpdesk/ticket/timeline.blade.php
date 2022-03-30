@@ -824,7 +824,7 @@ if ($thread->title != "") {
                                         if ($SlaPlan->id == $sla_plan->id) {
                                             echo "selected";
                                         }
-                                        ?> >{!! $sla_plan->grace_period !!}</option>
+                                        ?> >{!! $sla_plan->name !!} -> {!! $sla_plan->grace_period !!}</option>
                                         @endforeach
                                     </select>
                                     <spam id="error-sla" style="display:none" class="help-block text-red">This is a required field</spam>
